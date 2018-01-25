@@ -9,8 +9,10 @@ import { IonicPage } from 'ionic-angular/navigation/ionic-page';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) {}
 
+  goTo(location) {
+    this.navCtrl.push(location);
   }
 
 }
