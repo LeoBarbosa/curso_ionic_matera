@@ -22,10 +22,11 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col col-12>
-          <ion-icon name="person" class="icon icon-md ion-md-person"></ion-icon>
+        <ion-col col-12 (click)="openGalery()">
+          <ion-icon *ngIf="!user.image" name="person" class="icon icon-md ion-md-person"></ion-icon>
+          <img class="profile-image" *ngIf="user.image" src={{user.image}} />
         </ion-col>
-        <h2 class="name">Leonardo Barbosa de Oliveira</h2>
+        <h2 class="name">{{user.name}}</h2>
       </ion-row>
       <ion-row class="center">
         <ion-buttons>

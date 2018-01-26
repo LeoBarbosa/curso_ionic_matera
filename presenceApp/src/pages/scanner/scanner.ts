@@ -17,6 +17,7 @@ export class ScannerPage {
     this.toastCtrl.presentToast('No Scanner Implemented');
     this.alertCtrl.showAlert('Error', 'You not be able to scan anything!');
     this.alertCtrl.confirmAlert('Help us', 'Do you wanna report this error?');
+    this.alertCtrl.alertCallBack('Help us', 'Do you wanna report this error?');
   }
 
 }
