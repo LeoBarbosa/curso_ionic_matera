@@ -52,6 +52,7 @@ export class ProfilePage {
     localStorage.setItem("imageUrl", this.profilePicture);
     //Option to add to ionic's storage
     this.storage.set("imageUrl", this.profilePicture);
+    this.user.image = this.profilePicture;
   }
 
 }
