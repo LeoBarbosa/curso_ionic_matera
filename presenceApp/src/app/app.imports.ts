@@ -1,6 +1,7 @@
 // Providers
 import { ToastService } from '../providers/utils/toast.service';
 import { AlertService } from '../providers/utils/alert.service';
+import { ScannerService } from '../providers/utils/scanner.service';
 
 
 // Native Providers
@@ -8,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicStorageModule } from '@ionic/storage';
 import { Camera } from '@ionic-native/camera';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 // Modules
 import { HomePageModule } from '../pages/home/home.module';
@@ -20,16 +22,22 @@ import { ScannerPageModule } from '../pages/scanner/scanner.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicModule } from 'ionic-angular/module';
 import { MyApp } from './app.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+
 
 export const PROVIDERS = [
     ToastService,
-    AlertService
+    AlertService,
+    ScannerService
 ];
 
 export const NATIVEPROVIDERS = [
     StatusBar,
     SplashScreen,
-    Camera
+    Camera,
+    HttpClient,
+    BarcodeScanner
 ]
 
 export const MODULES = [
@@ -37,7 +45,8 @@ export const MODULES = [
     ReportPageModule,
     LoginPageModule,
     ProfilePageModule,
-    ScannerPageModule
+    ScannerPageModule,
+    HttpClientModule
 ]
 
 export const NATIVEMODULES = [
