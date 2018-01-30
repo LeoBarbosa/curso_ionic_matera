@@ -14,8 +14,9 @@ export class ProfilePage {
   private profilePicture: string;
 
   user = {
-    name: 'Leonardo Barbosa de Oliveira',
-    image: '' //'https://goo.gl/Gm28yk'
+    name: '',
+    image: '', //'https://goo.gl/Gm28yk'
+    email: ''
   }
 
   constructor(
@@ -25,7 +26,15 @@ export class ProfilePage {
     private storage: Storage
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+   this.storage.get("currentUser").then(res => {
+     if(res) {
+       this.user.name = res.nome;
+       this.user.image = res.urlFoto;
+       this.user.email = res.email;
+     }
+   }) 
+  }
 
   openGalery():void {
     let cameraOption = {

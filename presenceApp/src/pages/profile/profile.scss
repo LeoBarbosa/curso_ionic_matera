@@ -35,12 +35,15 @@ page-profile {
                 padding-left: 5px;
             }
         }
-        .name {
+        .name, .email {
             font-size: 16px;
             text-align: center;
             width: 100%;
             color: #673ab7;
             margin-top: 0;
+        }
+        .email {
+            font-size: 12px;
         }
         .center {
             justify-content: center;

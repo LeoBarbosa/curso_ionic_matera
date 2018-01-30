@@ -1,7 +1,27 @@
 page-home {
     ion-content {
+    	background: #673ab7!important;
+    	text-align: center;
         button {
-            background: #673ab7!important;
+            color: #673ab7;
         }
+        .logo {
+	        h3 {
+	         	text-align: center;
+	         	color: white;
+	         	margin: -15px 0 100px 0;
+	         	background: #673ab7;
+	         	z-index: 1;
+	         	position: relative;
+	        }
+	        ion-icon {
+	        	color: white;
+	        	font-size: 40px;
+	        	margin: 0 auto;
+	        	background: darken(#673ab7, 20%);
+	        	padding: 20px;
+	        	border-radius: 100%;
+	        }
+	    }
     }
 }

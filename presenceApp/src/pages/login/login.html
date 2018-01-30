@@ -1,11 +1,16 @@
 <ion-header>
-        <ion-navbar>
-            <button ion-button menuToggle>
-                <ion-icon name="menu"></ion-icon>
-            </button>
-            <ion-title>Login</ion-title>
-        </ion-navbar>
-    </ion-header>
-    <ion-content>
-        Login
-    </ion-content>
+    <ion-navbar>
+        <ion-title>Login</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <div class="background">
+        <div class="logo">
+          <ion-icon name="barcode"></ion-icon>
+          <h3><b>presence</b>App</h3>
+        </div>
+        <input type="text" name="login" placeholder="E-mail" [(ngModel)]="credentials.login">
+        <input type="password" name="password" placeholder="Password" [(ngModel)]="credentials.password">
+        <button ion-button full (click)="login()" color="light">Sign In</button>
+    </div>
+</ion-content>

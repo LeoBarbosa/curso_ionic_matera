@@ -1,3 +1,41 @@
 page-login {
-    
+	text-align: center;
+	overflow: hidden;
+	.background {
+		padding: 50px 20px 20px 20px;
+		height: 100%;
+		width: 100%;
+ 		background-color: #673ab7;
+ 		input {
+ 			width: 100%;
+ 			display: block;
+ 			margin-top: 10px;
+ 			border: 1px solid white;
+ 			background: transparent;
+ 			height: 45px;
+ 			color: white;
+ 			padding: 5px;
+ 		}
+	}
+	::-webkit-input-placeholder {
+		color: white;
+	}
+	.logo {
+	        h3 {
+	         	text-align: center;
+	         	color: white;
+	         	margin: -15px 0 100px 0;
+	         	background: #673ab7;
+	         	z-index: 1;
+	         	position: relative;
+	        }
+	        ion-icon {
+	        	color: white;
+	        	font-size: 40px;
+	        	margin: 0 auto;
+	        	background: darken(#673ab7, 20%);
+	        	padding: 20px;
+	        	border-radius: 100%;
+	        }
+	    }
 }

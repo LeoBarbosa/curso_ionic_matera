@@ -8,7 +8,11 @@
 </ion-header>
 
 <ion-content padding>
-    <button ion-button full (click)="goTo('ProfilePage')">Profile</button>
-    <button ion-button full (click)="goTo('ScannerPage')">Scanner</button>
-    <button ion-button full (click)="goTo('ReportPage')">Report</button>
+    <div class="logo">
+  	  <ion-icon name="barcode"></ion-icon>
+  	  <h3><b>presence</b>App</h3>
+    </div>
+    <button ion-button full (click)="goTo('ProfilePage')" color="light">Profile</button>
+    <button ion-button full (click)="goTo('ScannerPage')" color="light">Scanner</button>
+    <button ion-button full (click)="goTo('ReportPage')" color="light">Report</button>
 </ion-content>

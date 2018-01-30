@@ -2,7 +2,7 @@
 import { ToastService } from '../providers/utils/toast.service';
 import { AlertService } from '../providers/utils/alert.service';
 import { ScannerService } from '../providers/utils/scanner.service';
-
+import { AuthService } from '../providers/utils/auth.service';
 
 // Native Providers
 import { StatusBar } from '@ionic-native/status-bar';
@@ -29,7 +29,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 export const PROVIDERS = [
     ToastService,
     AlertService,
-    ScannerService
+    ScannerService,
+    AuthService
 ];
 
 export const NATIVEPROVIDERS = [
